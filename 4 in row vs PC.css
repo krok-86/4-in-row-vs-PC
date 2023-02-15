@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #d6eaf8;
+}
+
+.board {
+    display: flex;
+    border: 2px solid #4d4d4d;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(145, 73, 5);
+    background-image: -moz-linear-gradient();
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 5px 3px #4b4b4b;
+    box-shadow: 3px 3px 15px 3px #252525;
+}
+
+.tile {
+    align-self: center;
+    color: cornsilk;
+    border: 0px solid #181a09;
+    width: 13%;
+    height: 13.5%;
+    border-radius: 35px;
+    background-color: rgb(252, 211, 122);
+    -webkit-box-shadow: inset 5px 5px 15px 5px #000000;
+    box-shadow: inset 5px 5px 15px 5px #000000;
+}
+
+.tileRed {
+    background-color: rgba(255, 0, 0, 0.774);
+}
+
+.tileGreen {
+    background-color: rgb(20, 165, 81);
+}
+
+.winArea {
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 25, 25, 0.5);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.nameOfGame {
+    margin-bottom: 100px;
+    font-size: 40px
+}
+
+.buttonNewGame {
+    position: relative;
+    z-index: 100;
+    padding: 20px 30px;
+    margin: 75px 150px;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    line-height: 19px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px inset;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
+}
+
+.buttonNewGame:hover {
+    background: #1C6EA4;
+}
+
+.buttonNewGame:active {
+    background: #144E75;
+}
